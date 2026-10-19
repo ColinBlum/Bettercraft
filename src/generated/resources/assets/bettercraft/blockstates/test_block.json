@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bettercraft:block/test_block"
+    }
+  }
+}

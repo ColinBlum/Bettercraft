@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ruby_spear",
+  "key": {
+    "A": "bettercraft:ruby",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "  A",
+    " B ",
+    "B  "
+  ],
+  "result": {
+    "id": "bettercraft:ruby_spear"
+  }
+}

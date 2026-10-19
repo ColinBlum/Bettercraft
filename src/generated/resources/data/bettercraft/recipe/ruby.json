@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ruby",
+  "ingredients": [
+    "bettercraft:ruby_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "bettercraft:ruby"
+  }
+}

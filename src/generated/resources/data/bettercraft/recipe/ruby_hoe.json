@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ruby_hoe",
+  "key": {
+    "A": "bettercraft:ruby",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "AA",
+    "B ",
+    "B "
+  ],
+  "result": {
+    "id": "bettercraft:ruby_hoe"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ruby_block",
+  "key": {
+    "A": "bettercraft:ruby"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "bettercraft:ruby_block"
+  }
+}
