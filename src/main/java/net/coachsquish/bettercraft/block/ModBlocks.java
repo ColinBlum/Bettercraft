@@ -39,6 +39,25 @@ public class ModBlocks {
             ));
 
 
+
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {
+        DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
+        registerBlockItem(name, toReturn, components);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block, Component... components) {
+        ModItems.ITEMS.registerItem(name, properties -> new BlockItem(block.get(), properties.useBlockDescriptionPrefix()) {
+            @Override
+            public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                for(var compoonent : components) {
+                    builder.accept(compoonent);
+                }
+                super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+            }
+        });
+    }
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn);

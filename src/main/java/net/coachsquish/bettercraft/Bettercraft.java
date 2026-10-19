@@ -1,5 +1,6 @@
 package net.coachsquish.bettercraft;
 
+import net.coachsquish.bettercraft.block.ModBlocks;
 import net.coachsquish.bettercraft.creativemodetabs.ModCreativeModeTabs;
 import net.coachsquish.bettercraft.item.ModItems;
 import org.slf4j.Logger;
@@ -48,6 +49,7 @@ public class Bettercraft {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.
