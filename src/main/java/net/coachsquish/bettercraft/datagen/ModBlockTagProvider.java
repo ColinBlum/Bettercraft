@@ -24,10 +24,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.RUBY_BLOCK.getKey())
+                .add(ModBlocks.RUBY_ORE.getKey())
         ;
 
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.RUBY_BLOCK.getKey())
+                .add(ModBlocks.RUBY_ORE.getKey())
         ;
 
 //        tag(ModTags.Blocks.METALS)

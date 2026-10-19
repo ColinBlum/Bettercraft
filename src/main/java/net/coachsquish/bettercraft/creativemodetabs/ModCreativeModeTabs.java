@@ -19,11 +19,12 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Bettercraft.MODID);
 
     public static final Supplier<CreativeModeTab> BETTERCRAFT_TAB = CREATIVE_MODE_TABS.register("better_craft_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.EMERALD))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RUBY.get()))
                     .title(Component.translatable("creativetab.bettercraft.better_craft_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY);
                         output.accept(ModBlocks.RUBY_BLOCK);
+                        output.accept(ModBlocks.RUBY_ORE);
                     }).build());
 
 

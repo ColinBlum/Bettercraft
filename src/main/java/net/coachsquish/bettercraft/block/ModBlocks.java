@@ -38,6 +38,16 @@ public class ModBlocks {
                             .sound((SoundType.METAL))
             ));
 
+    public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
+            properties -> new DropExperienceBlock(
+                    UniformInt.of(4,8),
+                    properties
+                            .strength(3f)
+                            .explosionResistance(3f)
+                            .requiresCorrectToolForDrops()
+                            .sound((SoundType.STONE))
+            ));
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {

@@ -28,6 +28,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.RUBY_BLOCK.get());
 
+        add(ModBlocks.RUBY_ORE.get(), createOreDrop(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
