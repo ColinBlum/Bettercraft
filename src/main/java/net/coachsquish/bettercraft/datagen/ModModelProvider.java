@@ -24,6 +24,14 @@ public class ModModelProvider extends ModelProvider {
         // Blocks
         blockModels.createTrivialCube(ModBlocks.RUBY_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.RUBY_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.TEST_BLOCK.get());
+
+        itemModels.generateFlatItem(ModItems.RUBY_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateSpear(ModItems.RUBY_SPEAR.get());
 
     }
 }

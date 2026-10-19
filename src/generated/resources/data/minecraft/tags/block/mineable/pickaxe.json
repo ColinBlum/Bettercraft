@@ -1,6 +1,7 @@
 {
   "values": [
     "bettercraft:ruby_block",
-    "bettercraft:ruby_ore"
+    "bettercraft:ruby_ore",
+    "bettercraft:test_block"
   ]
 }

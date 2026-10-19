@@ -45,7 +45,16 @@ public class ModBlocks {
                             .strength(3f)
                             .explosionResistance(3f)
                             .requiresCorrectToolForDrops()
-                            .sound((SoundType.STONE))
+                            .sound((SoundType.NETHERRACK))
+            ));
+
+    public static final DeferredBlock<Block> TEST_BLOCK = registerBlock("test_block",
+            properties -> new Block(
+                    properties
+                            .strength(5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()
+                            .sound((SoundType.TUFF))
             ));
 
 

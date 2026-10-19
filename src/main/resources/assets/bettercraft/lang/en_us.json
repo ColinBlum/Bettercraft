@@ -4,5 +4,11 @@
   "item.bettercraft.ruby": "Ruby",
 
   "block.bettercraft.ruby_block": "Block of Ruby",
-  "block.bettercraft.ruby_ore": "Ruby Ore"
+  "block.bettercraft.ruby_ore": "Ruby Ore",
+  "item.bettercraft.ruby_sword": "Ruby Sword",
+  "item.bettercraft.ruby_pickaxe": "Ruby Pickaxe",
+  "item.bettercraft.ruby_shovel": "Ruby Shovel",
+  "item.bettercraft.ruby_axe": "Ruby Axe",
+  "item.bettercraft.ruby_hoe": "Ruby Hoe",
+  "item.bettercraft.ruby_spear": "Ruby Spear"
 }
