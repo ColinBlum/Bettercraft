@@ -1,13 +1,6 @@
 {
-  "itemGroup.bettercraft": "Example Mod Tab",
-  "block.bettercraft.example_block": "Example Block",
-  "item.bettercraft.example_item": "Example Item",
+  "creativetab.bettercraft.better_craft_tab": "Bettercraft",
 
-  "bettercraft.configuration.title": "Bettercraft Configs",
-  "bettercraft.configuration.section.bettercraft.common.toml": "Bettercraft Configs",
-  "bettercraft.configuration.section.bettercraft.common.toml.title": "Bettercraft Configs",
-  "bettercraft.configuration.items": "Item List",
-  "bettercraft.configuration.logDirtBlock": "Log Dirt Block",
-  "bettercraft.configuration.magicNumberIntroduction": "Magic Number Text",
-  "bettercraft.configuration.magicNumber": "Magic Number"
+  "item.bettercraft.ruby": "Ruby"
+
 }
