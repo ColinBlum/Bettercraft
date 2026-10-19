@@ -1,14 +1,14 @@
-package net.coachsquish.creativemodetabs;
+package net.coachsquish.bettercraft.creativemodetabs;
 
 import net.coachsquish.bettercraft.Bettercraft;
-import net.coachsquish.firstmod.FirstMod;
-import net.coachsquish.firstmod.block.ModBlocks;
-import net.coachsquish.firstmod.item.ModItems;
+import net.coachsquish.bettercraft.block.*;
+import net.coachsquish.bettercraft.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -18,11 +18,11 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab>  CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Bettercraft.MODID);
 
-    public static final Supplier<CreativeModeTab> FIRST_MOD_TAB = CREATIVE_MODE_TABS.register("better_craft_tab",
+    public static final Supplier<CreativeModeTab> BETTERCRAFT_TAB = CREATIVE_MODE_TABS.register("better_craft_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.EMERALD))
                     .title(Component.translatable("creativetab.bettercraft.better_craft_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-
+                        output.accept(ModItems.RUBY);
                     }).build());
 
 
