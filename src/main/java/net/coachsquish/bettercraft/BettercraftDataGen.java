@@ -1,5 +1,8 @@
 package net.coachsquish.bettercraft;
 
+import net.coachsquish.bettercraft.datagen.ModBlockLootTableProvider;
+import net.coachsquish.bettercraft.datagen.ModBlockTagProvider;
+import net.coachsquish.bettercraft.datagen.ModItemTagProvider;
 import net.coachsquish.bettercraft.datagen.ModModelProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -21,5 +24,9 @@ public class BettercraftDataGen {
         var lookupProvider = event.getLookupProvider();
 
         generator.addProvider(true, new ModModelProvider(packOutput));
+        generator.addProvider(true, new ModBlockTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
     }
 }
