@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.bettercraft.better_craft_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY);
+                        output.accept(ModBlocks.RUBY_BLOCK);
                     }).build());
 
 

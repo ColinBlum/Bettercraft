@@ -22,6 +22,7 @@ public class ModModelProvider extends ModelProvider {
 
 
         // Blocks
+        blockModels.createTrivialCube(ModBlocks.RUBY_BLOCK.get());
 
     }
 }
