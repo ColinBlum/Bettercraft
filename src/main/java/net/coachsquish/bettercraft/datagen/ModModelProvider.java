@@ -3,6 +3,7 @@ package net.coachsquish.bettercraft.datagen;
 import net.coachsquish.bettercraft.Bettercraft;
 import net.coachsquish.bettercraft.Bettercraft;
 import net.coachsquish.bettercraft.block.ModBlocks;
+import net.coachsquish.bettercraft.item.ModArmorMaterial;
 import net.coachsquish.bettercraft.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -32,6 +33,11 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RUBY_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.RUBY_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateSpear(ModItems.RUBY_SPEAR.get());
+
+        itemModels.generateTrimmableItem(ModItems.RUBY_HELMET.get(), ModArmorMaterial.RUBY_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModels.generateTrimmableItem(ModItems.RUBY_CHESTPLATE.get(), ModArmorMaterial.RUBY_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModels.generateTrimmableItem(ModItems.RUBY_LEGGINGS.get(), ModArmorMaterial.RUBY_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModels.generateTrimmableItem(ModItems.RUBY_BOOTS.get(), ModArmorMaterial.RUBY_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
     }
 }

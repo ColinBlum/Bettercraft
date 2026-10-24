@@ -118,6 +118,40 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("ruby_spear")
                 .save(output);
 
+        shaped(RecipeCategory.COMBAT, ModItems.RUBY_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.RUBY)
+                .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                .group("ruby_helmet")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.RUBY_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RUBY)
+                .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                .group("ruby_chestplate")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.RUBY_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.RUBY)
+                .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                .group("ruby_leggings")
+                .save(output);
+
+        shaped(RecipeCategory.COMBAT, ModItems.RUBY_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.RUBY)
+                .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                .group("ruby_boots")
+                .save(output);
+
 
     }
 

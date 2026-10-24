@@ -41,17 +41,17 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RUBY_SPEAR.getKey())
         ;
 
-//        tag(ItemTags.HEAD_ARMOR)
-//                .add(ModItems.RUBY_HELMET.getKey())
-//        ;
-//        tag(ItemTags.CHEST_ARMOR)
-//                .add(ModItems.RUBY_CHESTPLATE.getKey())
-//        ;
-//        tag(ItemTags.LEG_ARMOR)
-//                .add(ModItems.RUBY_LEGGINGS.getKey())
-//        ;
-//        tag(ItemTags.FOOT_ARMOR)
-//                .add(ModItems.RUBY_BOOTS.getKey())
-//        ;
+        tag(ItemTags.HEAD_ARMOR)
+                .add(ModItems.RUBY_HELMET.getKey())
+        ;
+        tag(ItemTags.CHEST_ARMOR)
+                .add(ModItems.RUBY_CHESTPLATE.getKey())
+        ;
+        tag(ItemTags.LEG_ARMOR)
+                .add(ModItems.RUBY_LEGGINGS.getKey())
+        ;
+        tag(ItemTags.FOOT_ARMOR)
+                .add(ModItems.RUBY_BOOTS.getKey())
+        ;
     }
 }

@@ -25,6 +25,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RUBY);
                         output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(ModBlocks.RUBY_ORE);
+                        output.accept(ModBlocks.TEST_BLOCK);
+                        output.accept(ModItems.RUBY_SWORD);
+                        output.accept(ModItems.RUBY_PICKAXE);
+                        output.accept(ModItems.RUBY_SHOVEL);
+                        output.accept(ModItems.RUBY_AXE);
+                        output.accept(ModItems.RUBY_HOE);
+                        output.accept(ModItems.RUBY_SPEAR);
+                        output.accept(ModItems.RUBY_HELMET);
+                        output.accept(ModItems.RUBY_CHESTPLATE);
+                        output.accept(ModItems.RUBY_LEGGINGS);
+                        output.accept(ModItems.RUBY_BOOTS);
                     }).build());
 
 

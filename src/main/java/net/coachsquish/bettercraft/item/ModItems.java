@@ -22,15 +22,23 @@ public class ModItems {
     public static final DeferredItem<Item> RUBY_PICKAXE = ITEMS.registerItem("ruby_pickaxe",
             properties -> new Item(properties.pickaxe(ModToolTiers.RUBY,1,-2.8f)));
     public static final DeferredItem<Item> RUBY_SHOVEL = ITEMS.registerItem("ruby_shovel",
-            properties -> new ShovelItem(ModToolTiers.RUBY,1.5f,-3.5f, properties));
+            properties -> new ShovelItem(ModToolTiers.RUBY,1.5f,-3.0f, properties));
     public static final DeferredItem<Item> RUBY_AXE = ITEMS.registerItem("ruby_axe",
-            properties -> new AxeItem(ModToolTiers.RUBY,6,-3.2f, properties));
+            properties -> new AxeItem(ModToolTiers.RUBY,5,-3.0f, properties));
     public static final DeferredItem<Item> RUBY_HOE = ITEMS.registerItem("ruby_hoe",
-            properties -> new HoeItem(ModToolTiers.RUBY,0,-3.0f, properties));
+            properties -> new HoeItem(ModToolTiers.RUBY,-5f,0f, properties));
     public static final DeferredItem<Item> RUBY_SPEAR = ITEMS.registerItem("ruby_spear",
             properties -> new Item(properties.spear(ModToolTiers.RUBY,
                     1.2f,1.33f, 0.35f, 2f, 8f,
                     4.5f, 5.1f, 7.5f, 4.67f)));
+    public static final DeferredItem<Item> RUBY_HELMET = ITEMS.registerItem("ruby_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final DeferredItem<Item> RUBY_CHESTPLATE = ITEMS.registerItem("ruby_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> RUBY_LEGGINGS = ITEMS.registerItem("ruby_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> RUBY_BOOTS = ITEMS.registerItem("ruby_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
 
     public static void register(IEventBus eventBus) {
