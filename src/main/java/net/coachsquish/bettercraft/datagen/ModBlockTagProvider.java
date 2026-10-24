@@ -29,39 +29,41 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.TEST_BLOCK.getKey())
         ;
 
-    // RUBY TIER
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.RUBY_BLOCK.getKey())
                 .add(ModBlocks.RUBY_ORE.getKey())
         ;
 
         tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        ;
 
         tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        ;
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        ;
 
         tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        ;
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        ;
 
         tag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
-                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL);
+                .addTag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+        ;
 
 
         tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
-                .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.TEST_BLOCK.getKey())
         ;
 
         tag(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
-                .remove(ModTags.Blocks.NEEDS_RUBY_TOOL)
         ;
 
         tag(ModTags.Blocks.METALS)
